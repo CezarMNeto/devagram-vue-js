@@ -8,7 +8,9 @@
     import InputImagem from '../components/InputImagem.vue';
     import {CadastroServices} from '../services/CadastroServices';
     import router from '../router';
+    
     const cadastroServices = new CadastroServices();
+    
     export default defineComponent({
         setup() {
             return {
@@ -49,9 +51,11 @@
                     formDataRequisicao.append('nome', this.nome);
                     formDataRequisicao.append('email', this.email);
                     formDataRequisicao.append('senha', this.senha);
+                    
                     if(this.imagem.arquivo){
                         formDataRequisicao.append('file', this.imagem.arquivo);
                     }
+
                     await cadastroServices.cadastrar(formDataRequisicao);
                     router.push({name : 'login', query:{cadastroComSucesso: 'true'}});
                 } catch (e : any) {
