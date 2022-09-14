@@ -6,8 +6,8 @@
     const loginService = new LoginServices();
 
     export default defineComponent({
-        setup(){
-            return {
+        setup() {
+            return{
                 loginService
             }
         },
@@ -15,6 +15,7 @@
             sair(){
                 loginService.logout();
                 router.push({name : 'login'});
+
             }
         }        
     });
