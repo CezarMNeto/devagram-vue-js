@@ -10,7 +10,11 @@
     justify-content: center;
     background-color: white;
     border-bottom: 0.5px solid $cinza1;
-    
+
+    &.hide{
+        display: none;
+    }
+
     .principal {
         width: 100%;
         padding: 8px 16px;
@@ -28,7 +32,7 @@
             flex-direction: row;
             align-items: center;
             justify-content: center;
-        
+
             .pesquisa {
                 display: flex;
                 align-items: center;
@@ -46,7 +50,7 @@
                     height: 20px;
                 }
 
-                input {
+                input{
                     background-color: $corPrimaria4;
                     border: none;
                     outline: none;
@@ -63,7 +67,20 @@
         display: none;
     }
 
+    .resultado{
+        position: absolute;
+        background-color: white;
+        width: 100%;
+        z-index: 9;
+        top: 55px;
+    }
+
     @media screen and (min-width: $desktopBreakpoint) {
+
+        &.hide{
+            display: flex;
+        }
+
         .principal{
             justify-content: space-evenly;
 
@@ -73,13 +90,13 @@
             }
 
             .group {
-                .pesquisa {
+                .pesquisa{
                     padding: 8px;
 
                     input {
                         padding: 0px 12px;
                         width: 200px;
-                        font-size: 16;
+                        font-size: 16px;
                     }
                 }
             }
@@ -95,7 +112,7 @@
                 align-items: center;
                 justify-content: space-between;
                 width: 160px;
-
+                
                 li {
                     list-style: none;
                     cursor: pointer;
@@ -106,6 +123,15 @@
                     }
                 }
             }
+        }
+
+        .resultado{
+            margin-left: 16%;
+            width: 20%;
+            min-width: 340px;
+            top: 63px;
+
+            filter: drop-shadow(0px 4px 4px rgba(0,0,0,0.5));
         }
     }
 }

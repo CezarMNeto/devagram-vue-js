@@ -4,11 +4,10 @@
     import Footer from '../components/Footer.vue'
     import { FeedServices } from '../services/FeedServices';
     import Feed from '../components/Feed.vue';
-    
+    import Loading from 'vue3-loading-overlay';
     const feedServices = new FeedServices();
-
     export default defineComponent({
-        components: { Header, Footer, Feed },
+        components: { Header, Footer, Feed, Loading },
         data() {
             return {
                 posts: [],
