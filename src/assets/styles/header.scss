@@ -10,10 +10,6 @@
     justify-content: center;
     background-color: white;
     border-bottom: 0.5px solid $cinza1;
-
-    &.hide{
-        display: none;
-    }
     
     .principal {
         width: 100%;
@@ -32,7 +28,7 @@
             flex-direction: row;
             align-items: center;
             justify-content: center;
-        }
+        
             .pesquisa {
                 display: flex;
                 align-items: center;
@@ -61,7 +57,11 @@
                 }
             }
         }
-    
+    }
+
+    .container-navegacao{
+        display: none;
+    }
 
     @media screen and (min-width: $desktopBreakpoint) {
         .principal{
@@ -80,6 +80,29 @@
                         padding: 0px 12px;
                         width: 200px;
                         font-size: 16;
+                    }
+                }
+            }
+        }
+
+        .container-navegacao {
+            display: flex;
+            margin-left: 25px;
+
+            ul{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+                width: 160px;
+
+                li {
+                    list-style: none;
+                    cursor: pointer;
+
+                    img {
+                        width: 28px;
+                        height: 28px;
                     }
                 }
             }
