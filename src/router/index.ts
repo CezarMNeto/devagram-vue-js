@@ -3,6 +3,10 @@ import HomeVue from '@/views/Home.vue'
 import LoginVue from '@/views/Login.vue'
 import { createRouter, createWebHistory } from 'vue-router'
 import CadastroVue from '@/views/Cadastro.vue';
+import UsuarioVue from '@/views/Usuario.vue';
+import PerfilVue from '@/views/Perfil.vue';
+import EditarVue from '@/views/Editar.vue';
+import PublicacaoVue from '@/views/Publicacao.vue';
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -23,7 +27,31 @@ const router = createRouter({
       path: '/cadastro',
       name: 'cadastro',
       component: CadastroVue
-    }
+    },
+    {
+      path: '/usuario/:id',
+      name: 'usuario',
+      component: UsuarioVue,
+      meta: { rotaPrivada: true }
+    },
+    {
+      path: '/perfil',
+      name: 'perfil',
+      component: PerfilVue,
+      meta: { rotaPrivada: true }
+    },
+    {
+      path: '/editar',
+      name: 'editar',
+      component: EditarVue,
+      meta: { rotaPrivada: true }
+    },
+    {
+      path: '/publicacao',
+      name: 'publicacao',
+      component: PublicacaoVue,
+      meta: { rotaPrivada: true }
+    },
   ]
 });
 
