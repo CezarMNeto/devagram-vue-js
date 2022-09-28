@@ -17,7 +17,7 @@
     border-bottom-width: 1px;
     border-color: $cinza2;
 
-    &focus {
+    &.focus {
         border-color: $corPrimaria;
     }
 
@@ -41,9 +41,9 @@
 
     @media screen and (min-width: $desktopBreakpoint) {
         border-bottom-width: 1.5px;
-        
+
         img {
             width: 20px;
-        }                
+        }
     }
 }

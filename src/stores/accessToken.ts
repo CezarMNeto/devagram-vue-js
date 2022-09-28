@@ -5,12 +5,12 @@ export const useAccessTokenStore = defineStore({
     state: () => ({
         token: localStorage.getItem('token')
     }),
-    getters : {
-        estaAutenticado : (state) => state.token !== null 
+    getters: {
+        estaAutenticado: (state) => state.token !== null
             && state.token !== undefined && state.token.trim() !== ''
     },
     actions: {
-        setToken(t : string){
+        setToken(t: string) {
             this.token = t
         }
     }

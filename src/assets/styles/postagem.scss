@@ -2,13 +2,14 @@
 
 .container-postagem {
     margin-top: 10px;
+
     .avatar {
         height: 32px;
         width: 32px;
         margin-right: 8px;
     }
 
-    .cabecalho{
+    .cabecalho {
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -16,19 +17,19 @@
         padding: 0 12px;
         margin-bottom: 8px;
 
-        strong{
+        strong {
             font-size: 12px;
             font-family: $fontBold;
             color: $cinza4;
 
-            &:hover{
+            &:hover {
                 text-decoration: underline;
             }
         }
     }
 
-    .foto{
-        img{
+    .foto {
+        img {
             width: 100%;
             height: auto;
             max-height: 360px;
@@ -36,11 +37,11 @@
         }
     }
 
-    .rodape{
+    .rodape {
         padding: 5px 16px;
 
         .descricao {
-            strong{
+            strong {
                 font-size: 12px;
                 font-family: $fontBold;
                 float: left;
@@ -48,12 +49,12 @@
                 color: $cinza4;
             }
 
-            p{
+            p {
                 font-size: 12px;
                 margin: 0 0 2px;
                 color: $cinza4;
 
-                span{
+                span {
                     cursor: pointer;
                     text-decoration: underline;
                     color: $corPrimaria3;
@@ -61,19 +62,19 @@
             }
         }
 
-        .acoes{
+        .acoes {
             display: flex;
             align-items: center;
             margin-bottom: 6px;
 
-            .feedIcone{
+            .feedIcone {
                 width: 20px;
                 height: 20px;
                 margin: 0 5px 0 0;
                 cursor: pointer;
             }
 
-            span{
+            span {
                 margin-right: 5px !important;
             }
 
@@ -82,7 +83,7 @@
                 font-size: 10px;
                 color: $cinza4;
 
-                strong{
+                strong {
                     font-size: 10px;
                     font-family: $fontBold;
                     text-decoration: none;
@@ -108,7 +109,7 @@
         }
     }
 
-    .container-comentario{
+    .container-comentario {
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -117,7 +118,7 @@
         margin-bottom: 16px;
         margin-top: 5px;
 
-        input{
+        input {
             resize: none;
             flex: 1;
             max-width: 100%;
@@ -127,17 +128,17 @@
             color: $cinza2;
         }
 
-        button{
+        button {
             display: none;
         }
     }
-    
+
 
     @media screen and (min-width: $desktopBreakpoint) {
         .cabecalho {
             cursor: pointer;
 
-            strong{
+            strong {
                 font-size: 18px;
             }
         }
@@ -147,8 +148,8 @@
             height: 42px;
         }
 
-        .foto{
-            img{
+        .foto {
+            img {
                 width: 100%;
                 height: auto;
                 max-height: none;
@@ -156,50 +157,53 @@
             }
         }
 
-        .rodape{
-            .acoes{
-                .feedIcone{
+        .rodape {
+            .acoes {
+                .feedIcone {
                     width: 32px;
                     height: 32px;
                 }
 
-                .curtidas{
+                .curtidas {
                     font-size: 16px;
 
-                    strong{
+                    strong {
                         font-size: 16px;
                     }
                 }
             }
 
-            .descricao{
-                p{
+            .descricao {
+                p {
                     font-size: 16px;
-                    span{
+
+                    span {
                         font-size: 16px;
                     }
                 }
-                strong{
+
+                strong {
                     font-size: 16px;
                 }
             }
 
-            .comentarios{
-                p{
+            .comentarios {
+                p {
                     font-size: 16px;
                 }
-                strong{
+
+                strong {
                     font-size: 16px;
                 }
             }
         }
 
-        .container-comentario{
+        .container-comentario {
             margin-bottom: 25px;
             margin-top: 15px;
             padding: 0 16px;
 
-            input{
+            input {
                 font-size: 16px;
             }
 

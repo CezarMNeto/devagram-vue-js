@@ -1,13 +1,12 @@
 <script lang="ts">
 import router from '@/router';
 import { defineComponent } from 'vue';
-import imgHomeAtivo from '../assets/imagens/home-ativo.svg'
-import imgHomeInativo from '../assets/imagens/home-inativo.svg'
-import imgPostAtivo from '../assets/imagens/post-ativo.svg'
-import imgPostInativo from '../assets/imagens/post-inativo.svg'
-import imgUserAtivo from '../assets/imagens/user-ativo.svg'
-import imgUserInativo from '../assets/imagens/user-inativo.svg'
-
+import imgHomeAtivo from '../assets/imagens/home-ativo.svg';
+import imgHomeInativo from '../assets/imagens/home-inativo.svg';
+import imgPostAtivo from '../assets/imagens/post-ativo.svg';
+import imgPostInativo from '../assets/imagens/post-inativo.svg';
+import imgUserAtivo from '../assets/imagens/user-ativo.svg';
+import imgUserInativo from '../assets/imagens/user-inativo.svg';
 export default defineComponent({
     methods: {
         efetuarNavegacao(name: string) {
@@ -44,10 +43,10 @@ export default defineComponent({
                 <img :src="getIcone('home')" alt="Home" class="iconeNav" />
             </li>
             <li @click="efetuarNavegacao('publicacao')">
-                <img :src="getIcone('publicacao')" alt="Publicacao" class="iconeNav" />
+                <img :src="getIcone('publicacao')" alt="publicação" class="iconeNav" />
             </li>
             <li @click="efetuarNavegacao('perfil')">
-                <img :src="getIcone('perfil')" alt="Perfil" class="iconeNav" />
+                <img :src="getIcone('perfil')" alt="perfil" class="iconeNav" />
             </li>
         </ul>
     </nav>

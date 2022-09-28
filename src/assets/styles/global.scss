@@ -20,7 +20,8 @@
     font-size: 14px;
 }
 
-html, body {
+html,
+body {
     height: 100%;
     margin: 0;
 }
@@ -28,6 +29,7 @@ html, body {
 #app {
     min-height: 100%;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     -webkit-box-pack: center;
@@ -36,16 +38,16 @@ html, body {
 }
 
 input {
-    &::placeholder{
+    &::placeholder {
         color: $cinza1;
         opacity: 1;
     }
 
-    &:-ms-input-placeholder{
+    &:-ms-input-placeholder {
         color: $cinza2;
     }
 
-    &::-ms-input-placeholder{
+    &::-ms-input-placeholder {
         color: $cinza2;
     }
 }
@@ -70,22 +72,22 @@ input {
     display: none !important;
 }
 
-input{
-    &::placeholder{
+input {
+    &::placeholder {
         color: $cinza2;
         opacity: 1;
     }
 
-    &:-ms-input-placeholder{
+    &:-ms-input-placeholder {
         color: $cinza2;
     }
 
-    &::-ms-input-placeholder{
+    &::-ms-input-placeholder {
         color: $cinza2;
     }
 }
 
-body{
+body {
     @media screen and (min-width: $desktopBreakpoint) {
         background-color: $cinza5;
         background-image: url("../imagens/fundo-desktop.svg");

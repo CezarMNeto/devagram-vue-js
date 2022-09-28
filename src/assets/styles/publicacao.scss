@@ -10,15 +10,15 @@
     align-items: center;
     justify-content: center;
 
-    &.not-preview{
+    &.not-preview {
         height: 100%;
     }
 
-    .container-acoes{
+    .container-acoes {
         width: 92%;
     }
 
-    .form{
+    .form {
         flex: 1;
         display: flex;
         flex-direction: column;
@@ -26,11 +26,11 @@
         justify-content: center;
         padding-bottom: 60px;
 
-        img{
+        img {
             margin-bottom: 10px;
         }
 
-        button{
+        button {
             color: white;
             width: 200px;
             height: 48px;
@@ -42,11 +42,11 @@
         }
     }
 
-    img{
+    img {
         padding: 20px 0px;
     }
 
-    .concluir{
+    .concluir {
         width: 92%;
         margin-top: 16px;
         display: flex;
@@ -54,7 +54,7 @@
         align-items: flex-start;
         justify-content: flex-start;
 
-        img{
+        img {
             width: 80px;
             height: 80px;
             padding: 0;
@@ -62,7 +62,7 @@
             margin-right: 15px;
         }
 
-        textarea{
+        textarea {
             flex: 1;
             height: 76px;
             border: none;
@@ -70,7 +70,7 @@
             font-size: 12px;
             color: $cinza2;
 
-            &:focus{
+            &:focus {
                 border-bottom: 1px solid $cinza2;
             }
         }
@@ -82,37 +82,37 @@
         height: 80%;
         justify-content: flex-start;
 
-        .form{
-            img{
+        .form {
+            img {
                 width: 80px;
                 height: 80px;
                 margin-bottom: 34px;
             }
 
-            span{
+            span {
                 font-size: 16px;
                 margin-bottom: 48px;
             }
 
-            button{
+            button {
                 width: 374px;
                 font-size: 16px;
             }
         }
 
-        img{
+        img {
             height: 100%;
             object-fit: cover;
         }
 
-        .concluir{
-            img{
+        .concluir {
+            img {
                 width: 160px;
                 height: 160px;
                 margin-right: 24px;
             }
-    
-            textarea{
+
+            textarea {
                 height: 155px;
                 font-size: 16px;
             }

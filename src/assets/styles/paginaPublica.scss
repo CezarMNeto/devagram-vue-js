@@ -7,10 +7,10 @@
     align-items: center;
     justify-content: center;
 
-    &.cadastro{
-        .logo{
+    &.cadastro {
+        .logo {
             display: none;
-        }   
+        }
     }
 
     .logo {
@@ -50,9 +50,9 @@
             cursor: pointer;
         }
 
-        
 
-        .link{
+
+        .link {
             text-align: center;
             margin-top: 24px;
 
@@ -61,7 +61,7 @@
                 margin: 0px 0px 2px;
             }
 
-            a{
+            a {
                 color: $corPrimaria;
                 font-family: $fontBold;
                 text-decoration: underline;
@@ -81,15 +81,15 @@
         flex-direction: row;
         align-items: center;
         justify-content: space-evenly;
-        
-        .logo{
+
+        .logo {
             min-width: 350px;
             width: 30%;
             margin: 0px;
         }
 
-        &.cadastro{
-            .logo{
+        &.cadastro {
+            .logo {
                 display: block;
             }
 

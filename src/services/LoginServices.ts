@@ -1,29 +1,29 @@
-import { useAccessTokenStore } from "./..//stores/accessToken";
-import { HttpApiServices } from "./HttpApiServices";
+import { useAccessTokenStore } from './../stores/accessToken';
+import { HttpApiServices } from './HttpApiServices';
 
-export class LoginServices extends HttpApiServices{
-    async login(body : any){
+export class LoginServices extends HttpApiServices {
+    async login(body: any) {
         const store = useAccessTokenStore();
-        const {data} = await this.post('/login', body);
+        const { data } = await this.post('/login', body);
 
         localStorage.setItem('email', data.email);
         localStorage.setItem('token', data.token);
         store.setToken(data.token);
 
         const userResponse = await this.get('/usuario');
-        if(userResponse && userResponse.data){
+        if (userResponse && userResponse.data) {
             const usuario = userResponse.data;
 
             localStorage.setItem('_id', usuario._id);
             localStorage.setItem('nome', usuario.nome);
 
-            if(usuario.avatar){
+            if (usuario.avatar) {
                 localStorage.setItem('avatar', usuario.avatar);
             }
-        }  
+        }
     }
 
-    logout(){
+    logout() {
         const store = useAccessTokenStore();
         localStorage.removeItem('email');
         localStorage.removeItem('token');

@@ -5,8 +5,8 @@
     align-items: center;
     padding: 8px 18px;
     border-bottom: 0.5px solid $cinza1;
-    
-    span{
+
+    span {
         cursor: pointer;
     }
 
@@ -16,7 +16,7 @@
         cursor: pointer;
     }
 
-    strong{
+    strong {
         margin: auto;
         font-family: $fontBold;
         font-size: 16px;
@@ -31,8 +31,8 @@
 
     @media screen and (min-width: $desktopBreakpoint) {
         padding: 18px 24px;
-        
-        span{
+
+        span {
             font-size: 16px;
         }
 
@@ -41,7 +41,7 @@
             height: 28px;
         }
 
-        strong{
+        strong {
             font-size: 20px;
         }
     }
