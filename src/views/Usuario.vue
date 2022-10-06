@@ -8,8 +8,10 @@ import Feed from '../components/Feed.vue';
 import router from '@/router';
 import HeaderPerfil from '../components/HeaderPerfil.vue';
 import Loading from 'vue3-loading-overlay';
+
 const feedServices = new FeedServices();
 const usuarioServices = new UsuarioServices();
+
 export default defineComponent({
     components: { Header, Footer, Feed, HeaderPerfil, Loading },
     data() {
